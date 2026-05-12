@@ -182,22 +182,20 @@ $nepaliDate = \Anuzpandey\LaravelNepaliDate\LaravelNepaliDate::from(now())
                 </div>
 
                 {{-- Admission Button --}}
-                <a href="https://forms.gle/3osJxRicNEhZTScaA"
+                <a href="{{ route('register.online') }}"
                     class="group relative flex items-center gap-2 bg-yellow-500 hover:bg-white text-[#004a99] px-3 md:px-5 py-1 rounded-sm text-[10px] md:text-[11px] font-bold uppercase tracking-widest transition-all duration-300 shadow-md whitespace-nowrap">
-
-                    {{-- Blinking Indicator --}}
                     <span class="relative flex h-2 w-2">
                         <span
                             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-red-600"></span>
                     </span>
-
-                    <span>भर्ना खुल्यो</span>
-
+                    <span>अनलाइन फारम</span>
                     <i class="fa-solid fa-arrow-right text-[9px] group-hover:translate-x-1 transition-transform"></i>
                 </a>
             </div>
         </div>
+
+
     </div>
 
     <header class="sticky top-0 z-[100] transition-all duration-300 border-b"

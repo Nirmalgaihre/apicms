@@ -134,6 +134,10 @@ Route::fallback(function () {
     return response()->view('errors.404', [], 404);
 });
 
+Route::get('/ctevt-registration', function () {
+    return view('pages.register');
+})->name('register.online');
+
 /*
 |--------------------------------------------------------------------------
 | AUTH ROUTES
